@@ -5,13 +5,13 @@ This repository showcases my experience in testing, including test cases, bug re
 
 ---
 
-## 📁 Contents
+## Contents
 
-- **[Jira Export PDF](JiraPDF.pdf)** – Complete export from Jira with test cases, bug reports and test suites. https://github.com/Serhii-glitch/qa-portfolio/blob/49371d06e7dd1ea5b9c54f36ef2367f1905e8ca5/JiraPDF.pdf (click "download raw file")
+- **[Jira Export PDF](JiraPDF.pdf)** – Complete export from Jira with test cases, bug reports and test suites. (click "download raw file")
 
 ---
 
-## 🧑‍💻 About Me
+## About Me
 
 I am a QA Engineer with experience in both manual and automated testing. I have hands-on experience in designing and executing test cases, reporting and tracking bugs, and managing test suites in Jira.  
 
@@ -21,7 +21,7 @@ I am passionate about ensuring software quality through a combination of thoroug
 
 ---
 
-## 🔹 Skills Demonstrated in This Portfolio
+## Skills Demonstrated in This Portfolio
 
 - Test case design and execution in Jira  
 - Bug identification, reporting, and tracking  
@@ -30,7 +30,7 @@ I am passionate about ensuring software quality through a combination of thoroug
 
 ---
 
-## ⚡ Highlights
+## Highlights
 
 - Well-structured test cases covering various scenarios  
 - Detailed bug reports with clear steps to reproduce  
@@ -38,6 +38,7 @@ I am passionate about ensuring software quality through a combination of thoroug
 
 ---
 
-## 📌 Contact
+## Contact
 
 - LinkedIn: https://github.com/Serhii-glitch
+- Email: spr1nt2281557@gmail.com

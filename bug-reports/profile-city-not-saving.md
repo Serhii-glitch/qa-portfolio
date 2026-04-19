@@ -1,21 +1,45 @@
-## Pre-condition:
-select the role of speaker
+# Bug: Profile update returns success but city value is not persisted
 
-## Steps:
+## Location
+Profile → Edit Profile → City field
 
-1) On the RegistrationDetails page, fill in the “Type of activity or preference” field.
-2) Select any “Select a city”.
-3) Delete the “Select a city”.
-4) Click the “Continue” button and complete the registration.
-5) Go to the “My Profile” page.
+## Description
+-When updating the city field with a value not from the predefined list, the system shows a success message.
 
-## Actual Result:
+-However, after reopening the profile, the city remains unchanged.
 
-The profile displays the “Місто” that the user deleted on the RegistrationDetails page.
+-This creates inconsistency between UI feedback and actual data persistence.
 
-## Expected Result:
+## Steps to Reproduce
+1. Open Profile
+2. Go to Edit Profile
+3. Locate "City" field
+4. Enter a custom city not from the suggested list
+5. Tap "Save"
+6. Reopen profile
 
-If the user deleted the “Місто” during registration, the field should remain empty in the profile.
+## Actual Result
+Success message is displayed, but city value remains unchanged.
+
+## Expected Result
+System should either:
+- save the entered city correctly, OR
+- restrict input to predefined values and prevent saving invalid input.
+
+## Severity
+Major
+
+## Priority
+Medium
+
+## Frequency
+Always
+
+## Impact
+Users may believe their data was updated successfully, leading to confusion and loss of trust.
+
+## Notes
+Possible backend validation silently rejects unsupported values.
 
 ## Environment:
 
@@ -26,4 +50,4 @@ If the user deleted the “Місто” during registration, the field should r
 
 ## Additional information:
 
-The same issue applies when choosing a child
+The same issue applies when choosing a child role.

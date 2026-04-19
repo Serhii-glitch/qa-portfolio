@@ -1,34 +1,41 @@
-## Pre-condition:
-be on the profile page.
+# Bug: Validation error message repeatedly appears after entering invalid activity input
 
-## Description:
-When entering less than 5 characters in the "Please indicate your interests or hobbies" field, validation error is shown.
+## Location
+Profile → Edit Profile → Activity field
 
-After correcting the input (entering 5+ characters) and clicking "Save", the error message continues to appear repeatedly for several seconds.
+## Description
+- When entering less than the required number of characters in the "Activity" field, a validation error message appears.
 
-## Steps:
+- However, the error message continues to appear repeatedly even after correcting the input and entering a valid value.
 
-1) Click on the "My Profile" button.
-2) find a "Please indicate your interests or hobbies" field.
-3) Enter less than 5 characters in the field.
-4) Observe validation error & it started spamming.
-5) Enter 5+ characters.
-6) Click "Save".
+- The issue persists for several seconds even after valid input is entered and the "Save" button is pressed.
 
-## Actual result:
--Error message continues to appear repeatedly
--Even after valid input and save action
+## Steps to Reproduce
+1. Open profile edit screen
+2. Go to "Activity" field
+3. Enter less than 5 characters
+4. Observe validation error message
+5. Enter valid input (5+ characters)
+6. Tap "Save"
+7. Observe behavior
 
-## Expected result:
--Error message should disappear immediately after input becomes valid
+## Actual Result
+Validation error message continues to appear repeatedly even after valid input is entered and saved.
 
--No repeated or delayed error messages
+## Expected Result
+Validation error message should disappear immediately after valid input is entered.
 
-## Severity:
-High
+## Severity
+Major
 
-## Priority:
+## Priority
 Medium
+
+## Frequency
+Always
+
+## Impact
+Creates poor user experience and may confuse users by displaying incorrect validation state.
 
 ## Environment:
 - Device: Xiaomi Redmi Note 11
@@ -40,4 +47,7 @@ Medium
 
 
 https://github.com/user-attachments/assets/352f5d48-8877-43e5-a1f0-6569e78f74d5
+
+## Notes
+Possible issue with validation state not being reset properly or multiple validation triggers without debounce.
 

@@ -1,27 +1,39 @@
-## Pre-condition:
+# Bug: App crashes when selecting "Speaker" role and uploading profile photo during registration
 
-select the role of speaker
+## Preconditions
+User is on registration flow
 
-## Steps:
+## Description
+-The application crashes during registration when selecting the "Speaker" role and uploading a profile photo.
 
-1) select any profile photo.
-2) Click the “Save” button.
+-The issue does not occur when selecting other roles (e.g., "Child"), where the flow works correctly.
 
-## Actual result:
+## Steps to Reproduce
+1. Open the app
+2. Start registration process
+3. Complete initial steps
+4. Select "Speaker" role
+5. Proceed to photo upload step
+6. Upload profile photo
+7. Observe behavior
 
-After clicking the button, the app immediately crashes.
+## Actual Result
+The application crashes after uploading a profile photo.
 
-## Expected result:
+## Expected Result
+The application should upload the photo successfully and proceed to the next step without crashing.
 
-The photo should be saved successfully, and the user should be redirected to the "RegistrationResult" page without crashing.
+## Severity
+Critical
 
-## Priority:
-
+## Priority
 High
 
-## Severity:
+## Frequency
+Sometimes
 
-Block
+## Impact
+Blocks registration for users selecting "Speaker" role.
 
 ## Environment:
 
@@ -29,3 +41,6 @@ Block
 - OS: Android 11
 - MIUI: 13.0.14
 - Build: HeroesSchool-v1.0-debug.apk
+
+## Notes
+Possible issue related to role-specific logic or API handling during photo upload.

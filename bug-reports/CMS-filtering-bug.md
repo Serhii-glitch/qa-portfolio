@@ -1,3 +1,5 @@
+# Bug: CMS: Filters do not apply correctly when selecting multiple criteria
+
 ## Steps to reproduce:
 
 1) Go to the events page in the CMS.
@@ -14,6 +16,12 @@ The “Internship” filter remains applied to the events list, but the filter n
 ## Expected result:
 
 If the filter is applied, it should remain checked in the filter.
+
+## Location
+CMS → Events page (filter section)
+
+## Frequency
+Always
 
 ## Priority:
 
@@ -32,4 +40,7 @@ Google Chrome Version 146.0.7680.81 (Official Build) (64-bit)
 ## Attachments:
 
 https://github.com/user-attachments/assets/a08bd54e-ba30-4a93-bea9-d8751a14b712
+
+## Notes
+This issue may indicate incorrect filtering logic on the backend or missing combination handling for multiple filters.
 

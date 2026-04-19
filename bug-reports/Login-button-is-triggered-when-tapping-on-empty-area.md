@@ -1,8 +1,8 @@
 ## Steps to reproduce:
 
-Open the registration screen
-Tap on any input field to open the keyboard
-Tap on the empty area near the "Login" button
+1) Open the registration screen
+2) Tap on any input field to open the keyboard
+3) Tap on the empty area near the "Login" button
 
 ## Actual result:
 
@@ -31,5 +31,5 @@ Build: HeroesSchool-v1.0-debug.apk
 
 https://github.com/user-attachments/assets/6ac09441-0f3a-47fd-a8b8-24255d9b3b20
 
-##Notes
+## Notes
 This issue occurs on multiple screens where input fields are present.

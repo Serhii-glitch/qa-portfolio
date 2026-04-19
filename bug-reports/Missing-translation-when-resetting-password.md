@@ -1,17 +1,36 @@
-## Steps to reproduce:
+# Bug: Password reset screen displays untranslated text (English instead of Ukrainian)
 
-1) Go to password reset form
-2) Input e-mail that hasn't yet been registered in thy system and try to proceed
+## Location
+Password Reset screen
 
+## Description
+-On the password reset screen, some UI elements are displayed in English instead of Ukrainian.
 
-## Actual: 
+-This breaks localization consistency and may confuse users.
 
-"User not found" is shown
+## Steps to Reproduce
+1. Open login screen
+2. Click "Forgot password"
+3. Navigate to password reset screen
+4. Observe text
 
+## Actual Result
+Some text is displayed in English (e.g., "Reset your password").
 
-## Expected: 
+## Expected Result
+All text should be displayed in Ukrainian according to app localization.
 
-Good practice is not to display information about user registration. It could be, for example «If the account exists, we have sent password reset instructions to the email address you provided.»
+## Severity
+Minor
+
+## Priority
+Low
+
+## Frequency
+Always
+
+## Impact
+Breaks localization consistency and reduces product quality perception.
 
 ## Environment:
 - Device: moto g54 5G

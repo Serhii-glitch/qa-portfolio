@@ -1,23 +1,38 @@
-## Description:
+# Bug: API accepts invalid email format and returns success
 
-The contact form allows submission with an invalid email format such as "gmail.com.com.com".
+## Description
+-Backend accepts email values with multiple domain levels (e.g., test@1.com.com.com.com.com.com) and processes the request successfully.
 
-Frontend validation prevents clearly invalid emails, but still allows structurally incorrect email formats.
+-Frontend validation restricts some invalid formats, but backend does not enforce the same rules, leading to inconsistent validation.
 
-## Steps:
+## Steps to Reproduce
+1. Open Postman
+2. Send POST request to /contact
+3. Use body:
+   {
+     "email": "test@1.com.com.com.com.com.com",
+     ...
+   }
+4. Send request
+5. Observe response
 
-1) Enter email: test@1.com.com.com.com.com.com
-2) Fill other required fields
-3) Submit form
-4) Actual result:
-5) Form is submitted successfully.
+## Actual Result
+API returns success: true and processes request with invalid email.
 
-## Expected Result:
-Email validation should reject invalid formats.
+## Expected Result
+System should ensure consistent validation between frontend and backend or apply stricter validation rules if required by product logic.
 
-## Severity:
+## Severity
+Medium
 
-Major
+## Priority
+Medium
+
+## Frequency
+Always
+
+## Impact
+Invalid email data may be stored, reducing data quality and affecting communication with users.
 
 ## Attachments:
 <img width="693" height="899" alt="image" src="https://github.com/user-attachments/assets/068591f7-522e-42f5-b579-ada6ba694df1" />
@@ -28,3 +43,6 @@ Major
 - OS: Android 11
 - MIUI: 13.0.14
 - Build: HeroesSchool-v1.0-debug.apk
+
+## Notes
+According to RFC standards, such email format may be technically valid, but not realistic. Consider stricter validation rules.

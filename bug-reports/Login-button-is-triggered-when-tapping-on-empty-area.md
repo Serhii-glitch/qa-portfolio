@@ -1,24 +1,37 @@
-## Steps to reproduce:
+# Bug: Login button is triggered when tapping outside the button area
 
-1) Open the registration screen
-2) Tap on any input field to open the keyboard
-3) Tap on the empty area near the "Login" button
+## Location
+Login / Registration screen
 
-## Actual result:
+## Description
+-Tapping on an empty area near the "Login" button triggers the button action.
 
-The "Login" button is triggered even though the user tapped on an empty area.
+-There appears to be an invisible clickable zone extending beyond the visible button boundaries.
 
-## Expected result:
+## Steps to Reproduce
+1. Open Login or Registration screen
+2. Do not enter any data
+3. Tap on an empty area near the "Login" button (outside visible button bounds)
+4. Observe behavior
 
-The "Login" button should be triggered only when the user taps directly on the button.
+## Actual Result
+The "Login" button is triggered even when tapping outside its visible area.
+
+## Expected Result
+Button should be triggered only when tapping directly on the visible button area.
 
 ## Severity
-
-Major (affects usability and may lead to unintended actions)
+Major
 
 ## Priority
+High
 
-Medium
+## Frequency
+Always
+
+## Impact
+Users may accidentally trigger actions, leading to unintended behavior and poor user experience.
+
 
 ## Environment:
 
@@ -32,4 +45,4 @@ Build: HeroesSchool-v1.0-debug.apk
 https://github.com/user-attachments/assets/6ac09441-0f3a-47fd-a8b8-24255d9b3b20
 
 ## Notes
-This issue occurs on multiple screens where input fields are present.
+Possible issue with incorrect layout bounds or overlapping clickable elements.

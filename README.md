@@ -7,16 +7,17 @@ This repository contains my practical QA work based on testing a real volunteer 
 ## About the Project
 
 The project includes:
-- CMS (web application)
+- CMS 
 - Android mobile application
+- Web application
 
 My role was to test core functionality, identify issues, and ensure product quality through structured testing approaches.
 
 ---
 
-## What I Did
+# What I Did
 
-### Bug Reports
+## Bug Reports
 - Identified and documented multiple bugs
 - Created clear and structured reports in GitHub
 - Included steps to reproduce, expected/actual results, and screenshots/videos
@@ -26,7 +27,7 @@ My role was to test core functionality, identify issues, and ensure product qual
 
 ---
 
-### Checklists
+## Checklists
 - Created structured checklists to cover features and test scenarios
 - Covered UI, validation, edge cases, and negative testing
 - Used checklists for systematic exploratory testing
@@ -39,7 +40,7 @@ Includes:
 
 ---
 
-### Test Cases
+## Test Cases
 - Designed test cases for critical functionality
 - Covered positive, negative, edge cases, and validation scenarios
 - Included Preconditions, Test Data, Steps, and Expected Results
@@ -52,7 +53,7 @@ Includes:
 
 ---
 
-### Requirements Analysis
+## Requirements Analysis
 - Worked with acceptance criteria
 - Analyzed feature behavior and edge cases
 - Transformed requirements into checklists and test cases
@@ -64,18 +65,39 @@ Includes:
 
 ---
 
+## E2E Automation (Playwright)
+
+Automated end-to-end tests for the donation page of the School Heroes platform.
+
+**Covered scenarios:**
+- Tab switching between "Monthly" and "One-time" donation types
+- Random currency selection (UAH / EUR / USD)
+- Random preset amount selection (100 / 200 / 500 / 1000 / 2000 UAH)
+- Full form fill: random city selection from dropdown, first name, last name, phone, email
+- Public offer checkbox
+- Form submission and successful redirect to confirmation page
+
+**Tools:** Playwright, TypeScript  
+**Note:** Both donation tabs share identical form fields — covered by unified test flow.
+
+`e2e-tests/`
+
+---
+
 ## Tools & Technologies
 
 - GitHub (bug tracking & documentation)
 - Postman, Swagger (API testing)
 - Chrome DevTools (Network, Console)
 - Figma (UI validation)
+- Playwright + TypeScript (E2E automation)
 
 ---
 
 ## Testing Types Applied
 
-- Functional testing  
+- Functional testing
+- E2E automation testing
 - Regression testing  
 - Exploratory testing  
 - UI/UX testing  
@@ -86,13 +108,13 @@ Includes:
 
 ---
 
-## Goal
+# Goal
 
 This portfolio demonstrates my practical QA skills, structured testing approach, and ability to work with real product scenarios.
 
 ---
 
-## Contact
+# Contact
 
 - GitHub: https://github.com/Serhii-glitch
 - Email: spr1nt2281557@gmail.com
